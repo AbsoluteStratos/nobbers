@@ -8,8 +8,8 @@ Stop spending money on cardboard, put it in a [tax advantaged account](https://w
 Pokemon fell off two decades ago.
 
 This website was build off of the [Astro framework](https://astro.build/) using
-the [Fuwari blog theme](https://github.com/saicaca/fuwari) as a base, but changed to
-it is more if an index.
+the [Fuwari blog theme](https://github.com/saicaca/fuwari) with some
+changes so its more of a landing page than a blog.
 I literally don't know what I'm doing but here we are.
 
 Repository (PRs welcome):
