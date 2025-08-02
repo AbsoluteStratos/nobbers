@@ -15,6 +15,9 @@ To launch the development server locally use:
 pnpm start
 ```
 
+**Note**: Because of gh-pages deployment needs base url to get set for things to work
+locally you will need to comment out the "base" option in `astro.config.mjs`.
+
 ## Adding New Link
 
 To add a new link, add a markdown file in the [content/links](./src/contant/links) folder.
