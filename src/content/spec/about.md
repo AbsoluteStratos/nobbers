@@ -1,9 +1,18 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
 
-::github{repo="saicaca/fuwari"}
+This is an unofficial index page of projects related to the streamer [OhhNoss](https://www.twitch.tv/ohhnoss)
+maintained by stratos.
+This project is not affiliated with, endorsed by, or officially connected to OhhNoss.
+All opinions / views are those of the creator(s) of this site.
+For example: Stop wasting money on cardboard, put it in a [tax advantaged account](https://www.fidelity.com/retirement-ira/roth-ira).
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+This website was build off of the [Astro framework](https://astro.build/) using
+the [Fuwari blog theme](https://github.com/saicaca/fuwari) as a base, but changed to
+it is more if an index.
+I literally don't know what I'm doing but here we are.
+
+Repository (PRs welcome):
+
+::github{repo="AbsoluteStratos/nobbers"}
+
+![](./zlgco5cvo4v81.webp)

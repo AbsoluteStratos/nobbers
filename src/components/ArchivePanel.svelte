@@ -19,6 +19,7 @@ interface Post {
 	data: {
 		title: string;
 		tags: string[];
+        url: string;
 		category?: string;
 		published: Date;
 	};
@@ -105,7 +106,8 @@ onMount(async () => {
 
             {#each group.posts as post}
                 <a
-                        href={getPostUrlBySlug(post.slug)}
+                        href={post.data.url}
+                        target="_blank"
                         aria-label={post.data.title}
                         class="group btn-plain !block h-10 w-full rounded-lg hover:text-[initial]"
                 >

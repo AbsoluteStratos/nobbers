@@ -3,6 +3,45 @@ import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
 import { getCategoryUrl } from "@utils/url-utils.ts";
 
+// === Link Utils ===
+
+async function getRawSortedLinks() {
+	const linksCollection = await getCollection("links");
+	const sorted  = linksCollection.sort((a, b) => {
+		const dateA = new Date(a.data.published);
+		const dateB = new Date(b.data.published);
+		return dateA > dateB ? -1 : 1;
+	});
+	return sorted;
+}
+
+export async function getSortedLinks() {
+	const sorted = await getRawSortedLinks();
+	return sorted;
+}
+
+export async function getLinkTagList(): Promise<Tag[]> {
+	const linksCollection = await getCollection("links");
+
+	const countMap: { [key: string]: number } = {};
+	linksCollection.map((post: { data: { tags: string[] } }) => {
+		post.data.tags.map((tag: string) => {
+			if (!countMap[tag]) countMap[tag] = 0;
+			countMap[tag]++;
+		});
+	});
+
+	// sort tags
+	const keys: string[] = Object.keys(countMap).sort((a, b) => {
+		return a.toLowerCase().localeCompare(b.toLowerCase());
+	});
+
+	return keys.map((key) => ({ name: key, count: countMap[key] }));
+}
+
+// ======
+
+
 // // Retrieve posts and sort them by publication date
 async function getRawSortedPosts() {
 	const allBlogPosts = await getCollection("posts", ({ data }) => {
