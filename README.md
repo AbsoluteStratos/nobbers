@@ -16,7 +16,7 @@ pnpm start
 ```
 
 **Note**: Because of gh-pages deployment needs base url to get set for things to work
-locally you will need to comment out the "base" option in `astro.config.mjs`.
+locally you will need to comment out the "base" option in `astro.config.mjs` under `defineConfig`.
 
 ## Adding New Link
 

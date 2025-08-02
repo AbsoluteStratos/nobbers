@@ -4,7 +4,8 @@ This is an unofficial index page of projects related to the streamer [OhhNoss](h
 maintained by stratos.
 This project is not affiliated with, endorsed by, or officially connected to OhhNoss.
 All opinions / views are those of the creator(s) of this site.
-Stop wasting money on cardboard, put it in a [tax advantaged account](https://www.fidelity.com/retirement-ira/roth-ira).
+Stop spending money on cardboard, put it in a [tax advantaged account](https://www.fidelity.com/retirement-ira/roth-ira).
+Pokemon fell off two decades ago.
 
 This website was build off of the [Astro framework](https://astro.build/) using
 the [Fuwari blog theme](https://github.com/saicaca/fuwari) as a base, but changed to
