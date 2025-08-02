@@ -1,10 +1,9 @@
 ---
-title: Draft Example
-published: 2022-07-01
-tags: [Markdown, Blogging, Demo]
-category: Examples
+title: Chibi RTX
+published: 2025-04-05
+tags: [Chibi]
 beta: false
-url: https://google.com
+url: https://www.youtube.com/watch?v=_Byrqrno2bQ
 ---
 
-asdas
+The render that fried my CPU
