@@ -26,8 +26,8 @@ import { pluginCustomCopyButton } from "./src/plugins/expressive-code/custom-cop
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://absolutestratos.github.io/nobbers/",
-	base: "/",
+	site: "https://absolutestratos.github.io/",
+	base: "nobbers/",
 	trailingSlash: "always",
 	integrations: [
 		tailwind({
