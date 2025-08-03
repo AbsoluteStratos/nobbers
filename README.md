@@ -15,8 +15,24 @@ To launch the development server locally use:
 pnpm start
 ```
 
-**Note**: Because of gh-pages deployment needs base url to get set for things to work
-locally you will need to comment out the "base" option in `astro.config.mjs` under `defineConfig`.
+### Deployment
+
+The site should get deployed to github pages.
+Due to the way astro configures urls, the config at `astro.config.mjs` under `defineConfig` needs to map correctly to the domain of interest.
+
+For the custom domain:
+
+```json
+site: "https://nobbers.tv/",
+// base: "nobbers",
+```
+
+For just github pages domain (this will break local deployments):
+
+```json
+site: "https://absolutestratos.github.io/",
+base: "nobbers",
+```
 
 ## Adding New Link
 
