@@ -7,10 +7,10 @@ All opinions / views are those of the creator(s) of this site.
 Stop spending money on cardboard, put it in a [tax advantaged account](https://www.fidelity.com/retirement-ira/roth-ira).
 Pokemon fell off two decades ago.
 
-This website was build off of the [Astro framework](https://astro.build/) using
+This website was built off of the [Astro framework](https://astro.build/) using
 the [Fuwari blog theme](https://github.com/saicaca/fuwari) with some
 changes so its more of a landing page than a blog.
-I literally don't know what I'm doing but here we are.
+First time using this library, I literally don't know what I'm doing but here we are.
 
 Repository (PRs welcome):
 
