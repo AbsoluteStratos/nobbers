@@ -1,5 +1,5 @@
 ---
-title: Nobbering Time Clock
+title: Nobberin Time Clock
 published: 2025-07-30
 tags: [Nobbers]
 beta: false
