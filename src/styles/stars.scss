@@ -2,15 +2,15 @@
 @use 'sass:string';
 
 @function multiple-box-shadow($number_of_stars) {
-  $value: "#{math.random(2000)}px #{math.random(2000)}px #FFF"; // Initial shadow
+  $value: "#{math.random(3000)}px #{math.random(3000)}px #FFF"; // Initial shadow
   @for $i from 2 through $number_of_stars {
-    $value: "#{$value}, #{math.random(2000)}px #{math.random(2000)}px #FFF"; // Add more shadows
+    $value: "#{$value}, #{math.random(3000)}px #{math.random(3000)}px #FFF"; // Add more shadows
   }
   @return string.unquote($value); // Return the concatenated value
 }
 
-$shadows-small: multiple-box-shadow(700); // Small stars
-$shadows-medium: multiple-box-shadow(200); // Medium stars
+$shadows-small: multiple-box-shadow(1000); // Small stars
+$shadows-medium: multiple-box-shadow(500); // Medium stars
 $shadows-big: multiple-box-shadow(100); // Big stars
 
 #stars1 {
