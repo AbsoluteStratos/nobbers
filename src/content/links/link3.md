@@ -1,5 +1,5 @@
 ---
-title: Chibi 3D Motion Design
+title: Chibi Launch Corps
 published: 2025-06-30
 tags: [Chibi, Video]
 beta: false
