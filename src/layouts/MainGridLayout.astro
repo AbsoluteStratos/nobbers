@@ -14,6 +14,7 @@ import {
 	MAIN_PANEL_OVERLAPS_BANNER_HEIGHT,
 } from "../constants/constants";
 import Layout from "./Layout.astro";
+import "../styles/stars.scss";
 
 interface Props {
 	title?: string;
@@ -64,6 +65,9 @@ const mainPanelTop = siteConfig.banner.enable
     <div id="banner-text" style={`position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);`}>
         {siteConfig.banner.text}
     </div>
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
 </div>}
 
 <!-- Main content -->
