@@ -140,8 +140,14 @@
     height: var(--collapsedHeight);
 }
 
+/* #banner-wrapper{
+    position: relative;
+} */
+
 #banner-text{
-    width: 100%;
+    /* position: absolute; */
+
+    /* width: 100%; */
     text-align: center; 
     font-family: 'Comic Sans MS', cursive, sans-serif;
     color: salmon;
@@ -151,8 +157,9 @@
 
     font-size: clamp(2rem, 4vw, 4rem);
 
-    -webkit-text-stroke: 2px white; /* white border around text */
-    text-stroke: 2px white;         /* fallback for future support */
+    paint-order: stroke fill;
+    -webkit-text-stroke: 5px white; /* white border around text */
+    text-stroke: 5px white;         /* fallback for future support */
 
     animation: pulse-glow 10s infinite ease-in-out;
     user-select: none;
@@ -160,7 +167,13 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none; 
+
+    transform: translate(0%, -55%);
 }
+
+/* #banner{
+    position: absolute;
+} */
 
 @keyframes pulse-glow {
   0%, 100% {

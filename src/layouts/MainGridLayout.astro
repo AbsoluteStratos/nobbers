@@ -62,7 +62,7 @@ const mainPanelTop = siteConfig.banner.enable
                   src={siteConfig.banner.src} position={siteConfig.banner.position}
     >
     </ImageWrapper>
-    <div id="banner-text" style={`position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);`}>
+    <div id="banner-text" class="object-cover h-full transition duration-700 overflow-hidden relative">
         {siteConfig.banner.text}
     </div>
     <div id="stars1"></div>
