@@ -1,5 +1,5 @@
 ---
-title: Chibi Orthographic
+title: Chibi 3D Scan
 published: 2025-08-09
 tags: [Chibi]
 image: "./images/nobber-fbx-cover.png"
