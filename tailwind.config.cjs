@@ -8,6 +8,15 @@ module.exports = {
       fontFamily: {
         sans: ["Roboto", "sans-serif", ...defaultTheme.fontFamily.sans],
       },
+       keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 1s ease-in-out forwards', // 'forwards' keeps the final state
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

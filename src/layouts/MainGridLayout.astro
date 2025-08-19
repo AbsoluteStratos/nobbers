@@ -5,7 +5,7 @@ import Navbar from "@components/Navbar.astro";
 import SideBar from "@components/widget/SideBar.astro";
 import type { MarkdownHeading } from "astro";
 import { Icon } from "astro-icon/components";
-import ImageWrapper from "../components/misc/ImageWrapper.astro";
+
 import TOC from "../components/widget/TOC.astro";
 import { siteConfig } from "../config";
 import {
@@ -46,8 +46,8 @@ const mainPanelTop = siteConfig.banner.enable
 
 <!-- Navbar -->
 <slot slot="head" name="head"></slot>
-<div id="top-row" class="z-50 pointer-events-none relative transition-all duration-700 max-w-[var(--page-width)] px-0 md:px-4 mx-auto" class:list={[""]}>
-    <div id="navbar-wrapper" class="pointer-events-auto sticky top-0 transition-all">
+<div id="top-row" class="z-50 pointer-events-none relative transition-all duration-2000 max-w-[var(--page-width)] px-0 md:px-4 mx-auto opacity-100" class:list={[""]}>
+    <div id="navbar-wrapper" class="pointer-events-auto sticky top-0 transition-all opacity-0 animate-fadeIn">
         <Navbar></Navbar>
     </div>
 </div>
@@ -58,12 +58,13 @@ const mainPanelTop = siteConfig.banner.enable
         class={`absolute z-10 w-full transition duration-700 overflow-hidden`} 
         style={`top: -${BANNER_HEIGHT_EXTEND}vh;`}
     >
-    <ImageWrapper 
+    <img 
         id="banner" 
         alt="Banner image of the blog" 
-        class:list={["object-cover h-full transition duration-700 opacity-0 scale-60"]}          
-        src="assets/images/ship.png"
+        class:list={["object-cover transition duration-700 opacity-0 scale-60 w-full h-full"]}          
+        src="ship.png"
         position={siteConfig.banner.position}
+        style="object-position: center;"
     />
     
     <div id="banner-text" class="object-cover h-full transition duration-700 overflow-hidden relative">
